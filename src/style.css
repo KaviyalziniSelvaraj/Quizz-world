@@ -1,0 +1,23 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@keyframes custom-pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.1; /* Set your custom opacity here */
+    }
+  }
+  
+  .animate-custom-pulse {
+    animation: custom-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  .no-animate {
+    animation: none !important;
+  }
+  .imgstyle {
+    animation-name: pulse;
+    animation-duration: 1000;
+    background-color: transparent;
+  }
